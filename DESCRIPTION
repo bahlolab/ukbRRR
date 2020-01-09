@@ -6,9 +6,14 @@ Authors@R:
            family = "Jackson",
            role = c("aut", "cre"),
            email = "jackson.v@wehi.edu.au",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0000-0002-9758-9784"))
 Description: What the package does (one paragraph).
 License: gpl-2.0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2.9000
+Imports:
+  data.table, 
+  openxlsx,
+  magrittr,
+  stringr

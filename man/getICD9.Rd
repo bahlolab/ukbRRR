@@ -4,10 +4,12 @@
 \alias{getICD9}
 \title{Getting ICD9 codes}
 \usage{
-getICD9(string = "")
+getICD9(refPath, string)
 }
 \arguments{
-\item{string}{String to match}
+\item{refPath}{Path to reference file "all_lkps_maps.xlsx"}
+
+\item{string}{String to match. Can be single term, or vector. Case insensitive.}
 }
 \description{
 This function retrieves ICD9 codes based on string matching.
