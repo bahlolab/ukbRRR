@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "jackson.v@wehi.edu.au",
            comment = c(ORCID = "0000-0002-9758-9784"))
-Description: What the package does (one paragraph).
+Description: Package to generate SQL commands to retrieve primary care data records for UK Biobank.
 License: gpl-2.0
 Encoding: UTF-8
 LazyData: true
