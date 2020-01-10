@@ -6,8 +6,8 @@
 \title{ICD10 codes.}
 \format{A data table with two variables:
 #' \describe{
-  \item{DESCRIPTION_ICD10}{Code Description}
-  \item{ICD10}{ICD10 code}
+  \item{description}{Code Description}
+  \item{icd}{ICD10 code}
   ...
 }}
 \source{

@@ -8,7 +8,7 @@ Authors@R:
            email = "jackson.v@wehi.edu.au",
            comment = c(ORCID = "0000-0002-9758-9784"))
 Description: Package to generate SQL commands to retrieve primary care data records for UK Biobank.
-License: gpl-2.0
+License: GPLv2
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2.9000

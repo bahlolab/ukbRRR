@@ -15,7 +15,7 @@ getICD(string, ICD)
 If matches are found, returns vector of ICD code.
 }
 \description{
-This function retrieves ICD9 codes based on string matching.
+This function retrieves ICD9/10 codes based on string matching.
 }
 \keyword{ICD10}
 \keyword{ICD9}
