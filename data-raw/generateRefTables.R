@@ -18,7 +18,7 @@ save(icd9, file = "../data/icd9.RData")
 ## ICD10 codes and descriptions
 icd10 <- openxlsx::read.xlsx("all_lkps_maps.xlsx", "icd10_lkp") %>%
   as.data.table() %>%
-  .[1:17934, .(ICD10_CODE, DESCRIPTION)] %>%
+  .[1:17934, .(ALT_CODE, DESCRIPTION)] %>%
   setnames(., c("icd", "description"))
 
   save(icd10, file = "../data/icd10.RData")
@@ -62,3 +62,23 @@ icd10Readv3 <- openxlsx::read.xlsx("all_lkps_maps.xlsx", "read_ctv3_icd10") %>%
   setnames(., c("readCode", "icd"))
 
 save(icd10Readv3, file = "../data/icd10Readv3.RData")
+
+
+################################################################
+## Read codes v3 descriptions
+readv2 <- openxlsx::read.xlsx("all_lkps_maps.xlsx", "read_v2_lkp") %>%
+  as.data.table() %>%
+  .[1:101953, .(term_description, read_code)]  %>%
+  setnames(., c("description", "readCode"))
+
+save(readv2, file = "../data/readv2.RData")
+
+
+################################################################
+## Read codes v3 descriptions
+readv3 <- openxlsx::read.xlsx("all_lkps_maps.xlsx", "read_ctv3_lkp") %>%
+  as.data.table() %>%
+  .[1:395650, .(term_description, read_code)]  %>%
+  setnames(., c("description", "readCode"))
+
+save(readv3, file = "../data/readv3.RData")
