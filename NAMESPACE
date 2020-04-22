@@ -2,6 +2,7 @@
 
 export(ICDToRead)
 export(getICDDesc)
+export(getQuery)
 export(getReadDesc)
 export(readToICD)
 export(stringToICD)

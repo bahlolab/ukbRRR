@@ -17,7 +17,8 @@ getICDDesc <- function(code, ICD) {
   refName <- paste0("icd",ICD)
   ref <- refName %>% get
 
-  descs <- ref[icd %in% code]
+  descs <- sapply(code, function(x)
+    paste(ref[icd %in% x, description], collapse=", "))
 
   return(descs)
 

@@ -17,7 +17,8 @@ getReadDesc <- function(code, read) {
   refName <- paste0("readv",read)
   ref <- refName %>% get
 
-  descs <- ref[readCode %in% code]
+  descs <- sapply(code, function(x)
+    paste(ref[readCode %in% x, description], collapse=", "))
 
   return(descs)
 
