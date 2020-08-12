@@ -1,4 +1,4 @@
-#' Getting ICD code descriptions
+#' Getting SQL command
 #'
 #' This function retrieves SQL query to get data for given read codes.
 #' @param read2 Read codes v2 to look up. Can be single term, or vector. Can be NULL. Returned vector from stringToRead or ICDToRead function can be used.
@@ -42,4 +42,3 @@ getQuery <- function(table, read2=NULL, read3=NULL) {
   return(command)
 
 }
-
